@@ -1,0 +1,63 @@
+.btn {
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  letter-spacing: var(--letter-spacing);
+  font-weight: bold;
+  padding: var(--space2x) var(--space3x);
+  border: 1px solid var(--brand-saumon);
+  color: var(--gray-black);
+  font-size: var(--text-sm);
+  display: inline-flex;
+  gap: var(--space2x);
+  justify-content: center;
+  align-items: center;
+  transition: all .3s ease-in-out;
+}
+
+.btn:hover {
+  box-shadow: inset 0 0 0 var(--space1x) var(--brand-saumon);
+}
+
+.btn--outlined {
+  border-color: var(--gray-white);
+  color: var(--gray-white);
+}
+
+.btn--outlined:hover {
+  box-shadow: inset 0 0 0 var(--space1x) var(--gray-white);
+}
+
+.btn--dark {
+  border-color: var(--gray-black);
+  background-color: var(--gray-black);
+  color: var(--gray-white);
+}
+
+.btn--dark:hover {
+  box-shadow: none;
+}
+
+.btn--outlined img {
+  filter: invert();
+}
+
+/* Bouton en savoir plus */
+
+.morelink {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--gray-black);
+  position: relative;
+  display: inline-block;
+}
+
+.morelink::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: var(--gray-black);
+}
