@@ -1,0 +1,36 @@
+.header {
+  background-color: var(--gray-white);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 80px;
+  z-index: 10;
+  display: flex;
+  align-items: stretch;
+  justify-content: space-between;
+  padding: 0 var(--space3x);
+  transition: all .4s ease;
+}
+
+.header__start {
+  display: flex;
+  align-items: center;
+}
+
+.header__end {
+  display: flex;
+}
+
+.header__search {
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+  background: inherit;
+  width: 80px;
+  cursor: pointer;
+}
+
+.header__search:focus {
+  outline: none;
+}

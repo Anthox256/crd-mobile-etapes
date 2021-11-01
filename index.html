@@ -8,28 +8,31 @@
     <link rel="stylesheet" href="src/css/style.css">
   </head>
   <body>
-    <header>
+    <header class="header">
 
-      <a href="/">
-        <img src="assets/icones/logo.svg" alt="logo du conservatoire Henri Dutilleux">
-      </a>
-
-      <button>
-        <img src="assets/icones/icon_search.svg" alt="icone de recherche">
-      </button>
-      <button>
-        <span></span>
-      </button>
-      
-      <nav>
-        <ul>
-          <li><a href="conservatoire.html">Le conservatoire</a></li>
-          <li><a href="#">Enseignements</a></li>
-          <li><a href="agenda.html">Agenda</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="inscription.html">S'inscrire</a></li>
-        </ul>
-      </nav>
+      <div class="header__start">
+        <a href="/">
+          <img src="assets/icones/logo.svg" alt="logo du conservatoire Henri Dutilleux">
+        </a>
+      </div>
+      <div class="header__end">
+        <button class="header__search">
+          <img src="assets/icones/icon_search.svg" alt="icone de recherche">
+        </button>
+        <button class="header__menuBtn menuBurger">
+          <span class="menuBurger__bar"></span>
+        </button>
+        
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item"><a class="menu__link" href="conservatoire.html">Le conservatoire</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Enseignements</a></li>
+            <li class="menu__item"><a class="menu__link" href="agenda.html">Agenda</a></li>
+            <li class="menu__item"><a class="menu__link" href="#">Contact</a></li>
+            <li class="menu__item menu__item--btn"><a class="menu__link" href="inscription.html">S'inscrire</a></li>
+          </ul>
+        </nav>
+      </div>
         
     </header>
 

@@ -1,0 +1,39 @@
+.menu {
+  visibility: hidden;
+  position: fixed;
+}
+
+.menuBurger {
+  position: relative;
+  width: 30px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  appearance: none;
+  outline: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.menuBurger__bar,
+.menuBurger__bar::before,
+.menuBurger__bar::after {
+  content: '';
+  background: var(--gray-black);
+  height: 2px;
+  width: 100%;
+  position: absolute;
+  border-radius: 2px;
+  left: 0;
+  z-index: 10;
+  transition: all .4s ease-in-out;
+}
+
+.menuBurger__bar::before {
+  top: -10px;
+}
+
+.menuBurger__bar::after {
+  top: 10px;
+}
