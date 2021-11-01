@@ -4,6 +4,11 @@
   padding-top: 64px;
   padding-bottom: 64px;
 }
+
+body:not(.home) .footer {
+  margin-top: var(--space4x);
+}
+
 .footer a {
   color: var(--gray-white);
   text-decoration: none;

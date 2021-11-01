@@ -42,6 +42,17 @@
   filter: invert();
 }
 
+
+.btn--dark {
+  border-color: var(--gray-black);
+  background-color: var(--gray-black);
+  color: var(--gray-white);
+}
+
+.btn--dark:hover {
+  box-shadow: none;
+}
+
 /* Bouton en savoir plus */
 
 .morelink {
@@ -60,4 +71,22 @@
   width: 100%;
   height: 2px;
   background-color: var(--gray-black);
+}
+
+/* Bouton + texte download */
+
+.download {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--gray-200);
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: var(--letter-spacing);
+  font-weight: bold;
+  color: var(--gray-black);
 }

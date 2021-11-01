@@ -1,0 +1,40 @@
+.form {
+  background-color: var(--gray-200);
+  padding-top:50px;
+  padding-bottom: 50px;
+  margin-bottom: 0;
+  margin-top: var(--space4x);
+}
+.form input,
+.form select {
+  -webkit-appearance: none;
+  appearance: none;
+  background: none;
+  border: none;
+  border-bottom: 1px solid  var(--gray-400);
+  padding: 10px 0;
+  width: 100%;
+}
+
+.form input:focus,
+.form select:focus {
+  outline: 0;
+}
+
+.form label {
+  color:  var(--gray-600);
+  margin-top: 40px;
+  display: block;
+}
+
+::-webkit-datetime-edit {
+  color:  var(--gray-600);
+}
+
+::-webkit-calendar-picker-indicator {
+  opacity: 0.2;
+}
+
+.form button {
+  margin-top: 40px;
+}

@@ -1,0 +1,29 @@
+.single__excerpt {
+  font-size: var(--text-xl);
+  line-height: 1.5;
+  margin-top: 58px;
+}
+
+.infos__row {
+  display: flex;
+  align-items: baseline;
+  border-bottom: 1px solid var(--gray-200);
+  padding: var(--space2x) 0;
+}
+
+.infos__label {
+  font-size: var(--text-sm);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+  font-weight: bold;
+  flex: 1;
+}
+
+.infos__value {
+  flex: 3;
+}
+
+.infos__link {
+  text-decoration: none;
+  color: var(--gray-black);
+}

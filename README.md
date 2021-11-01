@@ -1,4 +1,3 @@
-# Etape 9 : Composants cards + ajout classe avec BEM
+# Étape 10 : Composant form + btn (dark & download) + infos + ajout classe avec BEM
 
-1. Ajouter les classes pour faire les cards de l'agenda en utilisant la méthodologie BEM.
-2. Ajouter le css dans `card.css`
+2. Ajouter le css dans `forms.css`, `buttons.css` et `single.css` et ajoutez les classes.
