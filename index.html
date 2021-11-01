@@ -7,7 +7,7 @@
     <meta name="description" content="Site du Conservatoire de Belfort">
     <link rel="stylesheet" href="src/css/style.css">
   </head>
-  <body>
+  <body class="home">
     <header class="header">
 
       <div class="header__start">
@@ -38,21 +38,27 @@
 
     <main>
 
-      <h1>Conservatoire Henri Dutilleux</h1>
-      <h2>Conservatoire à rayonnement départemental du grand Belfort</h2>
-      
-      <h3>
-        <a href="#"><img src="assets/icones/icon_musique.svg" alt="Icone musique"> Musique</a>
-      </h3>
-      <h3>
-        <a href="#"><img src="assets/icones/icon_theatre.svg" alt="Icone théâtre"> Théâtre</a>
-      </h3>
-      <h3>
-        <a href="#"><img src="assets/icones/icon_danse.svg" alt="Icone danse"> Danse</a>
-      </h3>
-      
-      <div class="duotone">
-        <img src="assets/img/page-home.webp" alt="violoncelles">
+      <div class="container hero">
+        <div class="hero__header">
+          <h1 class="hero__title">Conservatoire Henri Dutilleux</h1>
+          <h2 class="hero__subTitle">Conservatoire à rayonnement départemental du grand Belfort</h2>
+        </div>
+        
+        <div class="hero__chapo chapo">
+          <h3 class="chapo__title">
+            <a class="chapo__link" href="/"><img src="assets/icones/icon_musique.svg" alt="Icone musique"> Musique</a>
+          </h3>
+          <h3 class="chapo__title">
+            <a class="chapo__link" href="/"><img src="assets/icones/icon_theatre.svg" alt="Icone théâtre"> Théâtre</a>
+          </h3>
+          <h3 class="chapo__title">
+            <a class="chapo__link" href="/"><img src="assets/icones/icon_danse.svg" alt="Icone danse"> Danse</a>
+          </h3>
+        </div>
+
+        <div class="hero__img duotone">
+          <img src="assets/img/page-home.webp" alt="violoncelles">
+        </div>
       </div>
       
       <section>
