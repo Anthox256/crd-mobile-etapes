@@ -1,3 +1,3 @@
-# Étape 10 : Composant form + btn (dark & download) + infos + ajout classe avec BEM
+# Étape 11 : Composant menu + interactions avec Alpine JS
 
-2. Ajouter le css dans `forms.css`, `buttons.css` et `single.css` et ajoutez les classes.
+2. Ajouter le css dans `menu.css`, `main.css` et ajouter les interactions à l'aide d'AlpineJS.

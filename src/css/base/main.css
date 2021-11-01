@@ -40,3 +40,12 @@ h3 {
   padding-right: var(--space3x);
   padding-left: var(--space3x);
 }
+
+/* Bug IOS
+=> L'overflow doit être appliqué sur l'élément body ET html
+pour faire disparaître le scroll sur safari IOS */
+
+.noscroll,
+.noscroll body {
+  overflow: hidden;
+}

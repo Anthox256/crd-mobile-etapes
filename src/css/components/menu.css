@@ -1,6 +1,49 @@
 .menu {
+  display: flex;
+  font-size: var(--text-xl);
+  text-transform: uppercase;
+  letter-spacing: var(--letter-spacing);
+  pointer-events: none;
   visibility: hidden;
+  overflow: hidden;
   position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: var(--brand-violet);
+  line-height: 1.5;
+  font-weight: 300;
+  text-transform: inherit;
+  opacity: 0;
+  transition: all .4s ease-in-out;
+}
+
+.menu--open {
+  pointer-events: auto;
+  visibility: visible;
+  opacity: 1;
+}
+
+.menu__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  margin-top: 25vh;
+  margin-left: 10vw;
+}
+
+.menu__item {
+  position: relative;
+  margin-top: 10%;
+}
+
+.menu__link {
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+  color: var(--gray-white);
+  text-decoration: none;
 }
 
 .menuBurger {
@@ -36,4 +79,17 @@
 
 .menuBurger__bar::after {
   top: 10px;
+}
+
+.menuBurger--open .menuBurger__bar, 
+.menuBurger--open .menuBurger__bar::before,
+.menuBurger--open .menuBurger__bar::after {
+  transform: rotate(135deg);
+  background: var(--gray-white);
+}
+
+.menuBurger--open .menuBurger__bar::before,
+.menuBurger--open .menuBurger__bar::after {
+  top: 0;
+  transform: rotate(90deg);
 }

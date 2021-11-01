@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{ menuIsOpen: false }" :class=" menuIsOpen && 'noscroll'">
   <head>
     <meta charset="utf-8">
     <title>Conservatoire Henri Dutilleux</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site du Conservatoire de Belfort">
     <link rel="stylesheet" href="src/css/style.css">
+    <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
   </head>
   <body class="home">
     <header class="header">
@@ -19,11 +20,11 @@
         <button class="header__search">
           <img src="assets/icones/icon_search.svg" alt="icone de recherche">
         </button>
-        <button class="header__menuBtn menuBurger">
+        <button class="header__menuBtn menuBurger" @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menuBurger--open'">
           <span class="menuBurger__bar"></span>
         </button>
         
-        <nav class="header__menu menu">
+        <nav class="header__menu menu" :class="menuIsOpen && 'menu--open'">
           <ul class="menu__list">
             <li class="menu__item"><a class="menu__link" href="conservatoire.html">Le conservatoire</a></li>
             <li class="menu__item"><a class="menu__link" href="#">Enseignements</a></li>
