@@ -1,0 +1,29 @@
+.footer {
+  background-color: var(--gray-black);
+  color: var(--gray-white);
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+.footer a {
+  color: var(--gray-white);
+  text-decoration: none;
+}
+
+.footer > *:not(:first-child) {
+  margin-top: var(--space3x);
+}
+
+.footer__list {
+  display: flex;
+  gap: var(--space3x);
+  font-size: var(--text-md);
+  line-height: 1.5;
+}
+
+.footer__title {
+  margin-top: 0;
+}
+
+.footer__address {
+  font-style: normal;
+}

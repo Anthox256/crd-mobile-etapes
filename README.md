@@ -1,4 +1,4 @@
-# Étape 4 : Header + ajout classe avec BEM
+# Étape 5 : Footer + ajout classe avec BEM
 
-1. Ajouter les classes sur l'en-tête de la page en utilisant la méthodolgie BEM
-2. Ecrire le css de `header.css`
+1. Ajouter les classes sur le pied de page en utilisant la méthodolgie BEM
+2. Ecrire le css de `footer.css` et ajouter les classes génériques `.container` et `.listUnstyled` dans `main.css`
