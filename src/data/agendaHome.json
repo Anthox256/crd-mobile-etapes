@@ -1,0 +1,29 @@
+[
+    {
+      "id": 1,
+      "title": "Concert d'ouverture",
+      "date": "Lundi 15 mars à 20h30",
+      "excerpt": "Pour ces retrouvailles symphoniques, Jean-François Verdier et l’Orchestre Victor Hugo Franche-Comté nous proposent pour sortir de cette longue nuit la Rêverie du soir de Saint-Saëns, puis le Prélude à la nuit de Ravel.",
+      "link": "concert-ouverture.html",
+      "picture": "assets/img/agenda-01.webp",
+      "picture_desc": "orchestre violons"
+    },
+    {
+      "id": 2,
+      "title": "Danse contemporaine",
+      "date": "Mardi 21 avril à 20h30",
+      "excerpt": "Mourad Merzouki relève le défi d’un corps à corps avec le vent et propulse sa danse sur la mer du Vendée Globe.",
+      "link": "concert-ouverture.html",
+      "picture": "assets/img/agenda-02.webp",
+      "picture_desc": "Spectacle théâtral"
+    },
+    {
+      "id": 3,
+      "title": "Molière à l’honneur",
+      "date": "vendredi 7 juin à 20h30",
+      "excerpt": "L’avarice d’Harpagon retentit sur toute sa maison : ses serviteurs n’ont que des vêtements sales ou abîmés, ses chevaux meurent de faim, et son fils même emprunte à un usurier qui se révèle être… son propre père !",
+      "link": "concert-ouverture.html",
+      "picture": "assets/img/agenda-03.webp",
+      "picture_desc": "Danse contemporaine"
+    }
+  ]

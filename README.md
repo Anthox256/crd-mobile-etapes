@@ -1,3 +1,4 @@
-# Étape 12 : Header scroll + composant Searchform + interaction avec Alpine JS
+# Étape 13 : import data pour l'agenda avec Alpine JS
 
-2. Ajouter/modifier le css dans `main.css`, `menu.css`, `header.css` et `searchform.css`.
+1. Ajouter le fichier `agendaHome.json` dans un répertoire `data` dans `src`.
+2. Modifier les pages HTML en ajoutant les data avec AlpineJS

@@ -92,46 +92,28 @@
         <p>La discussion avec Aslı Erdoğan sera animée par Isabelle Gattiker, directrice générale du FIFDH, et suivie d’une séance de signature.</p>
       </div>
 
-      <aside class="container">
+      <aside class="container"
+             x-data="{'cards': async ()=> { 
+               const resp = await fetch('/src/data/agendaHome.json'); 
+               return await resp.json(); 
+             }}">
         <header>
           <h2>Vous aimerez également</h2>
         </header>
 
-        <article class="card">
-          <div class="duotone card__img">
-            <img src="assets/img/agenda-01.webp" alt="orchestre violons">
-          </div>
-          <h3 class="card__title"><a class="card__titleLink" href="concert-ouverture.html">Concert d'ouverture</a></h3>
-          <div class="card__caption">
-            <p class="card__date">Lundi 15 mars à 20h30</p>
-            <p class="card__excerpt">Pour ces retrouvailles symphoniques, Jean-François Verdier et l’Orchestre Victor Hugo Franche-Comté nous proposent pour sortir de cette longue nuit la Rêverie du soir de Saint-Saëns, puis le Prélude à la nuit de Ravel.</p>
-            <a class="card__link morelink" href="concert-ouverture.html">Plus d'info</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="duotone card__img">
-            <img src="assets/img/agenda-02.webp" alt="Spectacle théâtral">
-          </div>
-          <h3 class="card__title"><a class="card__titleLink" href="concert-ouverture.html">Danse contemporaine</a></h3>
-          <div class="card__caption">
-            <p class="card__date">Mardi 21 avril à 20h30</p>
-            <p class="card__excerpt">Mourad Merzouki relève le défi d’un corps à corps avec le vent et propulse sa danse sur la mer du Vendée Globe.</p>
-            <a class="card__link morelink" href="concert-ouverture.html">Plus d'info</a>
-          </div>
-        </article>
-
-        <article class="card">
-          <div class="duotone card__img">
-            <img src="assets/img/agenda-03.webp" alt="Danse contemporaine">
-          </div>
-          <h3 class="card__title"><a class="card__titleLink" href="concert-ouverture.html">Molière à l’honneur</a></h3>
-          <div class="card__caption">
-            <p class="card__date">vendredi 7 juin à 20h30</p>
-            <p class="card__excerpt">L’avarice d’Harpagon retentit sur toute sa maison : ses serviteurs n’ont que des vêtements sales ou abîmés, ses chevaux meurent de faim, et son fils même emprunte à un usurier qui se révèle être… son propre père !</p>
-            <a class="card__link morelink" href="concert-ouverture.html">Plus d'info</a>
-          </div>
-        </article>
+        <template x-for="card in cards" :key="card.id">
+          <article class="card">
+            <div class="duotone card__img">
+              <img :src="card.picture" :alt="card.picture_desc">
+            </div>
+            <h3 class="card__title"><a class="card__titleLink" :href="card.link" x-text="card.title"></a></h3>
+            <div class="card__caption">
+              <p class="card__date" x-text="card.date"></p>
+              <p class="card__excerpt" x-text="card.excerpt"></p>
+              <a class="card__link morelink" :href="card.link">Plus d'info</a>
+            </div>
+          </article>
+        </template>
 
       </aside>
     </main>
