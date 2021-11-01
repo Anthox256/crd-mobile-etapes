@@ -1,0 +1,55 @@
+.searchForm {
+  visibility: hidden;
+  opacity: 0;
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: 100;
+  background: var(--gray-white);
+  transform: translateY(-80px);
+  transition: all .4s ease-in-out;
+}
+.searchForm--open {
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.searchForm__close,
+.searchForm__input,
+.searchForm__submit { 
+  -webkit-appearance: none;
+  appearance: none;
+  background: inherit;
+  border: none;
+}
+
+.searchForm__close:focus,
+.searchForm__input:focus,
+.searchForm__submit:focus { 
+  outline: none;
+}
+
+.searchForm__close {
+  cursor: pointer;
+  position: absolute;
+  top: 0; right: 0;
+  width: 80px;
+  height: 80px;
+}
+
+.searchForm__submit {
+  position: absolute;
+  top: 0; right: 50px; 
+  width: 80px;
+  height: 80px;
+}
+
+.searchForm__form {
+  height: 100%;
+}
+.searchForm__input {
+  font-size: var(--title-lg);
+  height: 100%;
+  width: 80%;
+  padding: 0 40px;
+}

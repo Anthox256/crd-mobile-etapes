@@ -63,7 +63,7 @@
 .menuBurger__bar::before,
 .menuBurger__bar::after {
   content: '';
-  background: var(--gray-black);
+  background: var(--gray-white);
   height: 2px;
   width: 100%;
   position: absolute;
@@ -85,11 +85,17 @@
 .menuBurger--open .menuBurger__bar::before,
 .menuBurger--open .menuBurger__bar::after {
   transform: rotate(135deg);
-  background: var(--gray-white);
+  background: var(--gray-white) !important;
 }
 
 .menuBurger--open .menuBurger__bar::before,
 .menuBurger--open .menuBurger__bar::after {
   top: 0;
   transform: rotate(90deg);
+}
+
+.header--atTop .menuBurger__bar, 
+.header--atTop .menuBurger__bar::before,
+.header--atTop .menuBurger__bar::after {
+  background: var(--gray-black);
 }

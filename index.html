@@ -8,18 +8,33 @@
     <link rel="stylesheet" href="src/css/style.css">
     <script defer="" src="https://unpkg.com/alpinejs@3.4.2/dist/cdn.min.js"></script>
   </head>
-  <body class="home">
-    <header class="header">
+  <body class="home" x-data="{ atTop: true }">
+    <header class="header" @scroll.window="atTop = ( window.scrollY > 100 ? false : true )" :class="{ ' header--atTop ' : !atTop }">
 
       <div class="header__start">
         <a href="/">
           <img src="assets/icones/logo.svg" alt="logo du conservatoire Henri Dutilleux">
         </a>
       </div>
-      <div class="header__end">
-        <button class="header__search">
+      <div class="header__end" x-data="{ searchIsOpen: false }">
+        <button class="header__search" @pointerdown="searchIsOpen = !searchIsOpen">
           <img src="assets/icones/icon_search.svg" alt="icone de recherche">
         </button>
+        <div class="searchForm" :class="searchIsOpen && 'searchForm--open'">
+          <button class="searchForm__close" @pointerdown="searchIsOpen = false">
+            <img src="assets/icones/icon_cross.svg" alt="icone croix">
+          </button>
+          <form class="searchForm__form" action="#" method="get">
+            <label class="sr-only" for="searchForm">Rechercher</label>
+            <input class="searchForm__input" id="searchForm" type="search" name="s" placeholder="Rechercher…" value="">
+            <button class="searchForm__submit" type="submit" aria-label="Rechercher">
+              <svg width="24" height="24" aria-hidden="true" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="11" cy="10" r="7" stroke="#191919" stroke-width="2"></circle>
+                <path stroke="#191919" stroke-width="2" d="M17.707 17.293l3.536 3.535"></path>
+              </svg>
+            </button>
+          </form>
+        </div>
         <button class="header__menuBtn menuBurger" @pointerdown="menuIsOpen = !menuIsOpen" :class="menuIsOpen && 'menuBurger--open'">
           <span class="menuBurger__bar"></span>
         </button>

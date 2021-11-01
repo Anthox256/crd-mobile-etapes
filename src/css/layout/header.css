@@ -1,5 +1,4 @@
 .header {
-  background-color: var(--gray-white);
   position: fixed;
   top: 0;
   left: 0;
@@ -11,6 +10,10 @@
   justify-content: space-between;
   padding: 0 var(--space3x);
   transition: all .4s ease;
+}
+
+.header--atTop {
+  background-color: white;
 }
 
 .header__start {
@@ -29,8 +32,13 @@
   background: inherit;
   width: 80px;
   cursor: pointer;
+  filter: invert();
 }
 
 .header__search:focus {
   outline: none;
+}
+
+.header--atTop .header__search {
+  filter: none;
 }

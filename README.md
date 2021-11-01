@@ -1,3 +1,3 @@
-# Étape 11 : Composant menu + interactions avec Alpine JS
+# Étape 12 : Header scroll + composant Searchform + interaction avec Alpine JS
 
-2. Ajouter le css dans `menu.css`, `main.css` et ajouter les interactions à l'aide d'AlpineJS.
+2. Ajouter/modifier le css dans `main.css`, `menu.css`, `header.css` et `searchform.css`.
