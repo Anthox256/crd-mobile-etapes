@@ -1,0 +1,31 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans-serif);
+  font-size: var(--text-md);
+  line-height: 1.6;
+  background-color: var(--gray-white);
+}
+
+h1,
+h2 {
+  font-family: var(--font-mono);
+  font-weight: normal;
+  line-height: 1.1;
+}
+
+h1 {
+  font-size: var(--title-xxl);
+}
+
+h2 {
+  font-size: var(--title-xl);
+}
+
+h3 {
+  line-height: 1.4;
+}

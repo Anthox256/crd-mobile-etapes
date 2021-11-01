@@ -1,0 +1,38 @@
+:root {
+  /* Color styles */
+  --brand-violet:       rgba(29, 9, 107, 1);
+  --brand-violet-light: rgba(140, 131, 197, 1);
+  --brand-saumon:       rgba(254, 170, 155, 1);
+  --brand-saumon-light: rgba(248, 211, 204, 1);
+  --gray-black:         rgba(0, 0, 0, 1);
+  --gray-800:           rgba(28, 21, 20, 1);
+  --gray-600:           rgba(152, 149, 146, 1);
+  --gray-400:           rgba(205, 202, 199, 1);
+  --gray-200:           rgba(233, 231, 228, 1);
+  --gray-100:           rgba(250, 250, 250, 1);
+  --gray-white:         rgba(255, 255, 255, 1);
+  --system-error:       rgba(255, 92, 92, 1);
+  --system-success:     rgba(33, 209, 132, 1);
+
+  /* Text-size styles */
+  --title-xxl: 2.25rem;
+  --title-xl: 1.5rem;
+  --title-lg: 1.125rem;
+  --text-xxl: 3rem;
+  --text-xl: 1.375rem;
+  --text-md: 0.813rem;
+  --text-sm: 0.688rem;
+
+  /* Font-family styles */
+  --font-mono: 'Space Mono', monospace;
+  --font-sans-serif: 'Mulish', sans-serif;
+
+  /* Font variantes */
+  --letter-spacing: 0.05em;
+
+  /* Espaces */
+  --space1x: 8px;
+  --space2x: 16px;
+  --space3x: 24px;
+  --space4x: 48px;
+}
