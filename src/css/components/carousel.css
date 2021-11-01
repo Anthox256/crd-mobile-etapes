@@ -1,0 +1,32 @@
+.carousel {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+  overflow-x: scroll;
+  padding: 1rem 0;
+  scroll-snap-type: x mandatory;
+  margin-left: calc(0px - var(--space3x));
+  margin-right: calc(0px - var(--space3x));
+}
+
+.carousel__item {
+  flex: 1 0 260px;
+  scroll-snap-align: center;
+}
+
+.carousel img {
+  display: block;
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--gray-200);
+}
+
+::-webkit-scrollbar {
+  height: 2px;
+  background-color: var(--gray-white);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--brand-saumon);
+}

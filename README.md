@@ -1,4 +1,3 @@
-# Étape 13 : import data pour l'agenda avec Alpine JS
+# Étape 14 : Carousel simple uniquement en CSS
 
-1. Ajouter le fichier `agendaHome.json` dans un répertoire `data` dans `src`.
-2. Modifier les pages HTML en ajoutant les data avec AlpineJS
+1. Ajouter le css le composant `carousel.css` et ajouter les classes correspondantes.
